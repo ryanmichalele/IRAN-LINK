@@ -1,8 +1,5 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 
-const paragraph = (name: string, title: string) =>
-  defineField({ name, title, type: "text", rows: 4 });
-
 export const article = defineType({
   name: "article",
   title: "Article",
@@ -195,6 +192,3 @@ export const article = defineType({
     select: { title: "title", subtitle: "kicker" },
   },
 });
-
-export const schemaTypes = [article, storySettings];
-export { paragraph };
