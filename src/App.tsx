@@ -2,7 +2,6 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Turnstile from "./components/Turnstile";
-import FictionDisclaimer from "./components/FictionDisclaimer";
 import { TURNSTILE_SITE_KEY } from "./config";
 import heroArrest from "./assets/hero-arrest.jpg";
 import { EntityProvider, EntityText } from "./sanity/EntityText";
@@ -40,7 +39,6 @@ function AppShell() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 selection:bg-red-600 selection:text-white">
-      <FictionDisclaimer />
       <Header />
 
       {/* Breaking marquee */}
